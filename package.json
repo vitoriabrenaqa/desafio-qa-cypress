@@ -1,0 +1,24 @@
+{
+  "name": "projeto-cypress-qa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {    
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run",
+    "report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/output.json",
+    "report:generate": "marge cypress/reports/output.json --reportDir cypress/reports --inline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.0.3",
+    "cypress-multi-reporters": "^2.0.5",
+    "mocha": "^11.1.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
